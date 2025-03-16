@@ -2,24 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nüve Créative</title>
-    <style>
-        body {
-            background-color: white;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        code {
-            font-family: monospace;
-            color: black;
-            font-size: 2em;
-        }
-    </style>
+    <title>Hello, Nüve Créative!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <code>hello, Nüve Créative!</code>
+
+<!-- Theme toggle icon -->
+<div class="theme-toggle" id="themeToggle">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round">
+        <!-- Sleeker Sun Icon -->
+        <g id="sunIcon">
+            <circle cx="12" cy="12" r="4"></circle>
+            <line x1="12" y1="2" x2="12" y2="4"></line>
+            <line x1="12" y1="20" x2="12" y2="22"></line>
+            <line x1="4" y1="12" x2="2" y2="12"></line>
+            <line x1="20" y1="12" x2="22" y2="12"></line>
+        </g>
+        <!-- Sleeker Moon Icon (hidden by default) -->
+        <g id="moonIcon" style="opacity: 0;">
+            <path d="M21 12.79A9 9 0 0112.21 3a7 7 0 100 14 9 9 0 008.79-4.21z"></path>
+        </g>
+    </svg>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
